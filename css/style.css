@@ -73,7 +73,7 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--bg-black-50);
-    overflow-y: scroll;
+    
     
 }
 body.stop-scrolling{
@@ -100,10 +100,11 @@ body.stop-scrolling{
 
 a {
     text-decoration: none;
-    text-decoration: none;
     color: var(--bg-black-900);
-    text-align: left;
     font-family: initial;
+    text-align: center;
+    text-transform: uppercase;
+    
 }
 
 ul {
@@ -125,6 +126,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
 }
 
 .justify-content-between {
@@ -415,7 +417,9 @@ img {
     color: var(--skin-color);
 }
 
-
+.section.hide{
+   display: none;
+}
 
 /*-----------
 preloader
@@ -471,7 +475,7 @@ header
 
 
 #header {
-    padding: 20px 15px;
+    padding: 15px 15px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -701,7 +705,7 @@ Home section
     margin: 0;
 }
 
-.home-section .home-text h1 {
+.home-section .statement h1 {
     font-size: 25px;
     font-weight: 500;
     color: var(--text-black-700);
@@ -1121,8 +1125,11 @@ Home section
 /* Project Section*/
 .project {
     height: 100vh;
-    overflow: hidden;
     position: relative;
+}
+
+section#portfolio {
+    top: 65px;
 }
 
 .project .slide {
@@ -1204,6 +1211,7 @@ Home section
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 1.4s;
+    font-weight: bold;
 }
 
 @keyframes captionText {
@@ -1309,7 +1317,7 @@ Home section
     display: none;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 22px;
     width: 100%;
     height: 100%;
     z-index: 1000; 
@@ -1575,7 +1583,7 @@ button {
     border: none;
       border-bottom: solid 2px;
       border-color: var(--bg-black-900);
-      color: var(--bg-black-900);
+      color: #2196f3;
       font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -1798,4 +1806,158 @@ button {
     }
   }
 
+  /***********************************
+  Scroll down arroww
+  ************************************/
+.sizing {
+    padding-top: 54%;
 
+}
+
+  .arrow {
+    height: 0px;
+    width: 120px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .circle {
+    background-color:var(--bg-black-50);
+    height: 50px;
+    width: 50px;
+    display: block;
+    border: 5px solid #00baff;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation-name:circle;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:circle;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+  }
+  .fa-arr {
+    font-size: 20px;
+    color: #00baff;
+    bottom: 27px;
+    position: absolute;
+    left: 70%;
+    margin-left: -18px;
+    animation-name:arrow;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:arrow;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+  }
+  .pulse {
+    margin: 0 auto;
+    border-radius: 100px;
+    position: absolute;
+    left: 0px;
+    top: -53px;
+    z-index: 0;
+    background-color: transparent;
+    opacity: 0;
+    width: 50px;
+    height: 55px;
+    border: 10px solid #00baff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    /* Giving Animation Function */
+    -webkit-animation: pulse 1s linear infinite 0.3s;
+    -moz-animation: pulse 1s linear infinite 0.3s; 
+    border-image: initial;
+  }
+  @keyframes arrow
+    {
+    0%   {bottom:0;}
+    75% {bottom:40px;}
+    100% {bottom:0;}
+    }
+  @-webkit-keyframes arrow
+    {
+    0%   {bottom:0;}
+    75% {bottom:40px;}
+    100% {bottom:0;}
+    }
+  @keyframes circle
+    {
+    0%   {height:50px;}
+    10% {height: 50px;}
+    50% {height: 60px;}
+    75% {height: 70px;}
+    90% {height: 60px;}
+    100% {height: 50px;}
+    }
+  @-webkit-keyframes circle
+    {
+        0%   {height:50px;}
+        10% {height: 50px;}
+        50% {height: 60px;}
+        75% {height: 70px;}
+        90% {height: 60px;}
+        100% {height: 50px;}
+    }
+  @-webkit-keyframes pulse {       
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+  }
+  @-moz-keyframes pulse {       
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+  }
+  
+
+
+    /***********************************
+Back to top
+  ************************************/
+
+.arrow-up {
+  text-align: center;
+  margin: 4% 1485px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bouncing 2s infinite;
+}
+
+@keyframes bouncing {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

@@ -58,7 +58,7 @@
         <div class="nav-menu-inner">
             <ul>
             <li><a href="#home" class="link-item inner-shadow active">home</a></li>
-          <li><a href="#about" class="link-item outer-shadow hover-in-shadow">More About Me</a>
+          <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About Me</a>
           <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a></li>
           <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>
             </ul>
@@ -142,7 +142,7 @@
                       </a>
                       
                     <h1>Computer Scientist In The Making</h1>
-                    <a href="#about" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                    
                 </div>
                 <div class="home-img">
                     <div class="img-box">
@@ -150,8 +150,21 @@
                     </div>
                 </div>
 
+            
+            
+            <div class="arrow" onclick="location.href='#about'">
+                <a href="#about" class="link-item pos">More About Me</a>
+                <span class="circle">
+                  <a href="#about" class="fa fa-arrow-down fa-arr link-item"></a>
+                </span>
+                
+                <span class="pulse"></span>
+                
+              </div>
             </div>
         </div>
+
+        
     </section>
 
     <!-- Home section End-->
@@ -413,11 +426,20 @@
             <!--Education End-->
         </div>
         </div>
+
+        <div class="arrow">
+            <span class="circle">
+              <a href="#portfolio" class="fa fa-arrow-down fa-arr link-item"></a>
+            </span>
+            <a href="#portfolio" class="link-item">Portfolio</a>
+            <span class="pulse"></span>
+            
+          </div>
     </section>
     <!-- About section End-->
 
     <!--Project Start-->
-    <section class="project revealUp fade-in" id="portfolio">
+    <section class="project revealUp fade-in section" id="portfolio">
     
         <h2 data-heading="latest work">My Project</h2>
         <div class="slider">
@@ -631,6 +653,16 @@
             <div class="indicator"></div>
 
 
+            <div class="sizing">
+            <div class="arrow">
+            <span class="circle">
+              <a href="#contact" class="fa fa-arrow-down fa-arr link-item"></a>
+            </span>
+            <a href="#contact" class="link-item">Portfolio</a>
+            <span class="pulse"></span>
+            
+          </div>
+            </div>
 
     </section>
     <!--Project End-->
@@ -640,9 +672,9 @@
 
 
     <!-- contact section start --> 
-    <section id="contact" class="revealUp fade-in">
+    <section id="contact" class="revealUp fade-in section">
     <div class="heading">contact</div>
-    <div id="container" id="contact">
+    <div id="container">
         <h1>&bull; get in Touch &bull;</h1>
         <div class="underline">
         </div>
@@ -684,6 +716,11 @@
           </div>
         </form><!-- // End form -->
       </div><!-- // End #container -->
+
+      <div class="arrow-up bounce">
+        <a class="fa fa-arrow-up fa-2x link-item" href="#home"></a>
+      </div>
+      
     </section>
  <!-- contact section end -->
 

@@ -15,6 +15,9 @@
   }
   function hideNavMenu(){
     navMenu.classList.remove("open");
+
+
+
     fadeOutEffect();
     bodyScrollingToggle();
   }
@@ -44,7 +47,7 @@
      		/* if clicked 'link-item is contained within the navigation menu' */
      		if(navMenu.classList.contains("open")){
      		  // activate new navigation menu 'link-item'
-           window.location.reload();
+           
      		  event.target.classList.add("active","inner-shadow");
      		  event.target.classList.remove("outer-shadow","hover-in-shadow");
      		  // hide navigation menu
@@ -70,6 +73,7 @@
   })
 
 })();
+
 
 
 
@@ -223,7 +227,8 @@ function disableScrolling(){
 }
 
 function enableScrolling(){
-  window.onscroll=function(){};
+  location.reload();
+  window.location.href = "https://angesh021.github.io/portfolio/index.html#portfolio";
 }
 
 
@@ -369,21 +374,19 @@ span.onclick = function() {
   modal.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  window.location.reload();
-
+  enableScrolling();
 }
 span2.onclick = function() {
   modal2.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  window.location.reload();
-
+  enableScrolling();
 }
 span3.onclick = function() {
   modal3.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  window.location.reload();
+  enableScrolling();
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
