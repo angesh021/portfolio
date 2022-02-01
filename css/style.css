@@ -100,7 +100,7 @@ body.stop-scrolling{
 
 a {
     text-decoration: none;
-    color: var(--bg-black-900);
+    color: var(--bg-black-50);
     font-family: initial;
     text-align: center;
     text-transform: uppercase;
@@ -1943,6 +1943,10 @@ Back to top
 .arrow-up {
   text-align: center;
   margin: 4% 1485px;
+}
+.arrow-color {
+
+    color: var(--bg-black-900);
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
