@@ -220,15 +220,10 @@ function bodyScrollingToggle(){
   document.body.classList.toggle("hidden-scrolling");
 }
 
-function disableScrolling(){
-  
-  document.body.style.overflow = 'hidden';
-  
+function showBodyScrollingToggle(){
+  document.body.classList.toggle("show-scrolling");
 }
 
-function enableScrolling(){
-  window.location.href = "https://angesh021.github.io/portfolio/index.html#portfolio";
-}
 
 
 /*-------------------------project popup ----------------------------*/ 
@@ -351,7 +346,7 @@ btn.onclick = function() {
   modal.style.display = "block";
   control.style.display = "none";
   indicators.style.display = "none";
-  disableScrolling();
+  bodyScrollingToggle();
 }
 
 
@@ -359,33 +354,33 @@ btn2.onclick = function() {
     modal2.style.display = "block";
     control.style.display = "none";
     indicators.style.display = "none";
-    disableScrolling();
+    bodyScrollingToggle();
   }
 
   btn3.onclick = function() {
     modal3.style.display = "block";
     control.style.display = "none";
     indicators.style.display = "none";
-    disableScrolling();
+    bodyScrollingToggle();
   }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  enableScrolling();
+  showBodyScrollingToggle();
 }
 span2.onclick = function() {
   modal2.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  enableScrolling();
+  showBodyScrollingToggle();
 }
 span3.onclick = function() {
   modal3.style.display = "none";
   control.style.display = "block";
   indicators.style.display = "flex";
-  enableScrolling();
+  showBodyScrollingToggle();
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

@@ -78,6 +78,11 @@ body {
 }
 body.hidden-scrolling{
     overflow-y: hidden;
+    overflow: hidden;
+}
+
+body.show-scrolling{
+    overflow-y: scroll;
 }
 
 
