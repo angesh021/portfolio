@@ -227,7 +227,6 @@ function disableScrolling(){
 }
 
 function enableScrolling(){
-  location.reload();
   window.location.href = "https://angesh021.github.io/portfolio/index.html#portfolio";
 }
 

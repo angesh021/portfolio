@@ -76,7 +76,7 @@ body {
     
     
 }
-body.stop-scrolling{
+body.hidden-scrolling{
     overflow-y: hidden;
 }
 
@@ -100,7 +100,7 @@ body.stop-scrolling{
 
 a {
     text-decoration: none;
-    color: var(--bg-black-50);
+    color: var(--skin-color);
     font-family: initial;
     text-align: center;
     text-transform: uppercase;
@@ -1825,7 +1825,8 @@ button {
     height: 50px;
     width: 50px;
     display: block;
-    border: 5px solid #00baff;
+    border: 5px solid;
+    border-color: var(--skin-color);
     border-radius: 100px;
     position: absolute;
     bottom: 0;
@@ -1847,7 +1848,7 @@ button {
   }
   .fa-arr {
     font-size: 20px;
-    color: #00baff;
+    color: var(--skin-color);
     bottom: 27px;
     position: absolute;
     left: 70%;
@@ -1878,7 +1879,8 @@ button {
     opacity: 0;
     width: 50px;
     height: 55px;
-    border: 10px solid #00baff;
+    border: 10px solid;
+    border-color: var(--skin-color);
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -o-border-radius: 100px;
