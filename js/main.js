@@ -333,7 +333,6 @@ var btn3 = document.getElementById("button3");
 var control = document.getElementsByClassName("controls")[0];
 var indicators = document.getElementsByClassName("indicator")[0];
 
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("pp-close")[0];
 var span2 = document.getElementsByClassName("pp-close2")[0];

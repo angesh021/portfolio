@@ -3,8 +3,8 @@
 	.section-contact,
 	.portfolio-popup .description,
 	.portfolio-popup .info,
-	
-	
+	.project,
+	.video, .img, .pp-main, .pp-main-inner,
 	.home-section,
 	.preloader,
 	.nav-menu,
@@ -29,6 +29,10 @@
 	.contact-section .submit-btn,
 	.home-section .home-text{
 		text-align: center;
+	}
+	.project .caption p{
+		text-align: center;
+		margin: 15px 50px 30px;
 	}
 	.home-section .full-screen{
 		padding: 100px 0;
@@ -128,6 +132,7 @@
 	.home-section .home-text, 
 	.home-section .home-img,
 	.home-section,
+	.video, .img, .pp-main, .pp-main-inner,
 	.preloader,
 	.nav-menu,
 	.arrow,
